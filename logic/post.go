@@ -2,8 +2,10 @@ package logic
 
 import (
 	"jachow/code1024/dao/mysql"
+	"jachow/code1024/dao/redis"
 	"jachow/code1024/model"
 	"jachow/code1024/pkg"
+	"strconv"
 )
 
 func CreatePost(post *model.Post) (err error) {
@@ -60,4 +62,9 @@ func GetPostList(offset, limit int64) (ApiPostList []*model.ApiPostInfo, err err
 	}
 
 	return ApiPostList, nil
+}
+
+func VotePost(userID int64, params *model.ParamsVote) (err error) {
+	// TODO: 调用dao层投票
+	return redis.VotePost(strconv.FormatInt(userID, 10), params.PostID, float64(params.Direction))
 }

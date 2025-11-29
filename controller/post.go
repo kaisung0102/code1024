@@ -79,3 +79,27 @@ func GetPostListHandler(c *gin.Context) {
 	}
 	Response(c, CodeSuccess, http.StatusOK, ApiPostList)
 }
+
+func VotePostHandler(c *gin.Context) {
+	// TODO: 调用logic层投票
+	params := new(model.ParamsVote)
+	if err := c.ShouldBindJSON(params); err != nil {
+		zap.L().Error("VotePostHandler bind json failed", zap.Error(err))
+		Response(c, CodeInvalidParam, http.StatusBadRequest, err.Error())
+		return
+	}
+	// TODO: 调用logic层投票
+	// 通过上下文获取当前登录用户的ID
+	userID, err := getCurrentUserID(c)
+	if err != nil {
+		zap.L().Error("get current user id failed", zap.Error(err))
+		Response(c, CodeInvalidParam, http.StatusBadRequest, err.Error())
+		return
+	}
+	if err := logic.VotePost(userID, params); err != nil {
+		zap.L().Error("VotePostHandler vote post failed", zap.Error(err))
+		Response(c, CodeServerBusy, http.StatusInternalServerError, err.Error())
+		return
+	}
+	Response(c, CodeSuccess, http.StatusOK, nil)
+}
