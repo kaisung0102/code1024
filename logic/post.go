@@ -1,6 +1,7 @@
 package logic
 
 import (
+	"fmt"
 	"jachow/code1024/dao/mysql"
 	"jachow/code1024/dao/redis"
 	"jachow/code1024/model"
@@ -10,7 +11,19 @@ import (
 
 func CreatePost(post *model.Post) (err error) {
 	post.PostID = pkg.GetID()
-	return mysql.CreatePost(post)
+	err = mysql.CreatePost(post)
+	if err != nil {
+		return err
+	}
+	// 初始化帖子创建时间
+	err = redis.CreatePost(strconv.FormatInt(post.PostID, 10), post.CreateTime.Unix())
+	fmt.Println(post.CreateTime.Unix())
+	fmt.Println(post)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
 
 func GetPost(postID int64) (apiPostInfo *model.ApiPostInfo, err error) {

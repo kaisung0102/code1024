@@ -18,7 +18,7 @@ func InitLogger(logConfig *config.LogConfig) {
 		zapcore.DebugLevel,
 	)
 
-	logger := zap.New(core)
+	logger := zap.New(core, zap.AddCaller())
 	zap.ReplaceGlobals(logger)
 }
 
@@ -29,6 +29,7 @@ func getEncoder() zapcore.Encoder {
 	config.EncodeLevel = zapcore.CapitalLevelEncoder
 	config.EncodeDuration = zapcore.SecondsDurationEncoder
 	config.EncodeCaller = zapcore.ShortCallerEncoder
+	config.CallerKey = "caller"
 	return zapcore.NewConsoleEncoder(config)
 }
 

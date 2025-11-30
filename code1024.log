@@ -488,3 +488,156 @@
 2025-11-29T21:21:52.188+0800	INFO	mysql connect success
 2025-11-29T21:59:55.673+0800	INFO	mysql connect success
 2025-11-29T21:59:56.886+0800	INFO	mysql connect success
+2025-11-29T22:36:24.709+0800	INFO	mysql connect success
+2025-11-29T22:40:50.923+0800	ERROR	VotePostHandler bind json failed	{"error": "json: cannot unmarshal number into Go struct field ParamsVote.post_id of type string"}
+2025-11-29T22:40:59.199+0800	ERROR	redis zscore failed	{"error": "redis: nil"}
+2025-11-29T22:40:59.199+0800	ERROR	VotePostHandler vote post failed	{"error": "投票无效"}
+2025-11-29T22:42:29.638+0800	INFO	mysql connect success
+2025-11-29T22:42:31.526+0800	INFO	mysql connect success
+2025-11-29T22:42:40.652+0800	INFO	mysql connect success
+2025-11-29T22:42:43.999+0800	ERROR	redis zscore failed	{"error": "redis: nil"}
+2025-11-29T22:42:44.000+0800	ERROR	VotePostHandler vote post failed	{"error": "投票无效"}
+2025-11-29T22:42:59.748+0800	INFO	mysql connect success
+2025-11-29T22:43:05.202+0800	INFO	mysql connect success
+2025-11-29T22:43:09.806+0800	INFO	mysql connect success
+2025-11-29T22:46:10.989+0800	INFO	mysql connect success
+2025-11-29T22:46:16.628+0800	INFO	mysql connect success
+2025-11-29T22:46:17.418+0800	INFO	mysql connect success
+2025-11-29T22:46:43.034+0800	INFO	mysql connect success
+2025-11-29T22:46:54.000+0800	ERROR	redis zscore failed	{"error": "redis: nil"}
+2025-11-29T22:46:54.000+0800	ERROR	VotePostHandler vote post failed	{"error": "投票无效"}
+2025-11-29T22:47:17.986+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:47:45.430+0800	ERROR	redis/post.go:23	redis zscore failed	{"error": "redis: nil"}
+2025-11-29T22:47:45.430+0800	ERROR	controller/post.go:100	VotePostHandler vote post failed	{"error": "投票无效"}
+2025-11-29T22:51:47.934+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:51:48.735+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:52:08.719+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:52:54.720+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:54:29.859+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:54:52.816+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:57:01.332+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T22:57:23.013+0800	ERROR	redis/post.go:29	user has voted, can't vote again
+2025-11-29T22:57:23.013+0800	ERROR	controller/post.go:100	VotePostHandler vote post failed	{"error": "不能重复投票"}
+2025-11-29T22:58:24.926+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:01:12.875+0800	ERROR	controller/post.go:87	VotePostHandler bind json failed	{"error": "Key: 'ParamsVote.Direction' Error:Field validation for 'Direction' failed on the 'required' tag"}
+2025-11-29T23:04:46.992+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:13.080+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:15.652+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:16.983+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:31.655+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:47.473+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:54.519+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:56.040+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:26:57.839+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:00.391+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:03.784+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:06.511+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:08.731+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:26.106+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:30.082+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:32.066+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:38.827+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:57.229+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:27:57.698+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:28:01.636+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:28:08.330+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:28:12.690+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:28:13.413+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:28:33.061+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:32:33.484+0800	ERROR	redis/post.go:31	user has voted, can't vote again
+2025-11-29T23:32:33.484+0800	ERROR	controller/post.go:100	VotePostHandler vote post failed	{"error": "不能重复投票"}
+2025-11-29T23:37:42.458+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:37:46.380+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:37:51.516+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:38:00.118+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:38:03.773+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:02.006+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:08.443+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:16.257+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:48.000+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:48.466+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:53.352+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:39:55.002+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:40:18.108+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:40:24.512+0800	ERROR	redis/post.go:31	user has voted, can't vote again
+2025-11-29T23:40:24.512+0800	ERROR	controller/post.go:100	VotePostHandler vote post failed	{"error": "不能重复投票"}
+2025-11-29T23:40:43.925+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:40:56.310+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:41:19.719+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:41:21.384+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:41:29.699+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:41:35.858+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:41:44.837+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:42:03.302+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:42:19.181+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:42:24.949+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:42:33.466+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:03.105+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:05.693+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:07.214+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:08.912+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:11.420+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:14.349+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:15.826+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:18.717+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:20.041+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:26.691+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:29.709+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:38.390+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:48.485+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:43:49.592+0800	ERROR	redis/post.go:25	user has voted, can't vote again
+2025-11-29T23:43:49.592+0800	ERROR	controller/post.go:100	VotePostHandler vote post failed	{"error": "不能重复投票"}
+2025-11-29T23:49:19.325+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:49:21.205+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:49:22.458+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:49:30.315+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:49:31.911+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:49:33.258+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:50:07.380+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:50:15.297+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:50:18.244+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:50:25.645+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:50:36.604+0800	ERROR	redis/post.go:30	user has voted, can't vote again
+2025-11-29T23:50:36.604+0800	ERROR	controller/post.go:100	VotePostHandler vote post failed	{"error": "不能重复投票"}
+2025-11-29T23:50:51.916+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:50:58.254+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:51:04.527+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:52:54.350+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:52:57.361+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:53:05.374+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:53:08.249+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:53:17.630+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:56:24.799+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:56:44.360+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:56:54.686+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-29T23:57:19.179+0800	ERROR	router/route.go:38	404 Not Found	{"path": "/api/v1/posts"}
+2025-11-30T00:00:08.780+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T00:00:08.798+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T00:00:22.877+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:12:11.121+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:13:45.172+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:13:47.443+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:13:57.985+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:14:10.623+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:14:16.112+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:14:21.675+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:14:24.150+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:14:38.381+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:12.398+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:22.949+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:24.669+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:28.511+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:33.897+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:41.943+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:45.096+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:49.392+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:54.454+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:15:55.939+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:16:19.889+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:16:49.055+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:17:29.242+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:17:32.036+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:17:36.281+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:39:10.721+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:39:13.821+0800	INFO	mysql/user.go:48	mysql connect success
+2025-11-30T20:39:16.492+0800	INFO	mysql/user.go:48	mysql connect success

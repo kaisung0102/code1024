@@ -103,3 +103,29 @@ func VotePostHandler(c *gin.Context) {
 	}
 	Response(c, CodeSuccess, http.StatusOK, nil)
 }
+
+func GetPostListOrderByHandler(c *gin.Context) {
+	// TODO: 调用logic层获取帖子列表
+	offsetStr := c.DefaultQuery("offset", "0")
+	limitStr := c.DefaultQuery("limit", "10")
+	orderBy := c.DefaultQuery("order", "score")
+	offset, err := strconv.ParseInt(offsetStr, 10, 64)
+	if err != nil {
+		zap.L().Error("GetPostListOrderByHandler parse offset failed", zap.Error(err))
+		Response(c, CodeInvalidParam, http.StatusBadRequest, err.Error())
+		return
+	}
+	limit, err := strconv.ParseInt(limitStr, 10, 64)
+	if err != nil {
+		zap.L().Error("GetPostListOrderByHandler parse limit failed", zap.Error(err))
+		Response(c, CodeInvalidParam, http.StatusBadRequest, err.Error())
+		return
+	}
+	ApiPostList, err := logic.GetPostListOrderBy(offset, limit)
+	if err != nil {
+		zap.L().Error("GetPostListOrderByHandler get post list failed", zap.Error(err))
+		Response(c, CodeServerBusy, http.StatusInternalServerError, err.Error())
+		return
+	}
+	Response(c, CodeSuccess, http.StatusOK, ApiPostList)
+}

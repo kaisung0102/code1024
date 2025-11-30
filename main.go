@@ -7,8 +7,6 @@ import (
 	"jachow/code1024/logger"
 	"jachow/code1024/pkg"
 	"jachow/code1024/router"
-
-
 )
 
 // @title Code1024
@@ -26,10 +24,9 @@ import (
 // @host 127.0.0.1:8080
 // @BasePath /api/v1
 
-func main() {
-	
+func main() {	
 	// 读取配置文件
-	config.InitConfig("./config/config.yaml")
+	config.InitConfig("../config.yaml")
 	// 初始化日志
 	logger.InitLogger(&config.Conf.Log)
 	// 初始化数据库
