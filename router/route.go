@@ -31,7 +31,7 @@ func Routers() *gin.Engine {
 		v.POST("/post", controller.CreatePostHandler)
 		v.GET("/post/:id", controller.GETPostHandler)
 		v.GET("/posts", controller.GetPostListHandler)
-		v.GET("/posts2", controller.GetPostListOrderByHandler)
+		// v.GET("/posts2", controller.GetPostListOrderByHandler)
 		v.POST("/vote", controller.VotePostHandler)
 	}
 
